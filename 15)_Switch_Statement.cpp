@@ -13,32 +13,40 @@ string getDayofWeek(int dayNum)
     {
         dayName = "Monday";
     }
-    else if(dayNum == 3)
+    else if(dayNum == 2)
     {
         dayName = "Tuesday";
     }
-    else if(dayNum == 4)
+    else if(dayNum ==3)
     {
         dayName = "Wednesday";
     }
-    else if(dayNum == 5)
+    else if(dayNum == 4)
     {
         dayName = "Thursday";
     }
+    else if(dayNum == 5)
+    {
+        dayName = "Friday";
+    }
     else if (dayNum == 6)
     {
-        dayName = "Sunday";
+        dayName = "Saturday";
     }
     else
     {
         cout << "Invalid day \n";
     }
-    return dayName;
+return dayName;
 }   
 
 int main()
 {
-    cout << "hello" << endl;
+    cout << getDayofWeek(1) << endl;
     cout << getDayofWeek(0) << endl;
+    cout << getDayofWeek(2) << endl;
+    cout << getDayofWeek(5) << endl;
+    cout << getDayofWeek(6) << endl;
+    cout << getDayofWeek(8) << endl;
     return 0;
 }
